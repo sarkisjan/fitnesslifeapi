@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
-  },
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+},  
   "keywords": [],
   "author": "Blagoja Sarkisjan <baze_sarkisjan@yahoo.com>",
   "license": "ISC",
