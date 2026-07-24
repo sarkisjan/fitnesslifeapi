@@ -26712,4 +26712,4 @@ const Exercises = [
 Exercises.map(Exercise => {
     console.log(Exercise.image);
 })
-export default Exercises;
+
