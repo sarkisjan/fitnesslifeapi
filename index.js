@@ -1,6 +1,6 @@
 import bodyParser from "body-parser";
 import express from "express";
-const cors = require("cors");
+import cors from "cors";
 
 import exercisesRoutes from "./routes/exercises.js";
 
