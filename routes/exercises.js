@@ -1,5 +1,5 @@
 import express from 'express';
-import { Exercises } from '../exercisesData/Exercises.js';
+import { Exercises } from '../exercisesData/ExercisesDB.js';
 
 
 const router = express.Router();
