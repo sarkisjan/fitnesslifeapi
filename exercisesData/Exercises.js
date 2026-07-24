@@ -1,5 +1,5 @@
 // https://raw.githubusercontent.com/sarkisjan/fitnesslifeimages/main/images1/3-4sit-up.gif
-const Exercises = [
+export const Exercises = [
     {
         id: "0001",
         bodyPart: "waist",
@@ -26709,7 +26709,7 @@ const Exercises = [
         ]
     }
 ]
-Exercises.map(Exercise => {
-    console.log(Exercise.image);
-})
+// Exercises.map(Exercise => {
+//     console.log(Exercise.image);
+// })
 
