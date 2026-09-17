@@ -23,6 +23,7 @@ app.get("/", (req, res) => {
       <title>FitnessLife RESTful API</title>
       <style>
         body {
+          width: 100vw;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           background-color: #121212;
           color: #e0e0e0;
@@ -34,6 +35,7 @@ app.get("/", (req, res) => {
         h2 { color: #ffffff; margin-top: 30px; font-size: 1.3rem; }
         ul { list-style: none; padding: 0; }
         li { 
+          width: 100%;
           background: rgba(255,255,255,0.03); 
           margin: 10px 0; 
           padding: 12px 18px; 
