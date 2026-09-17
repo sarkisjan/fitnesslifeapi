@@ -54,12 +54,20 @@ app.get("/", (req, res) => {
           font-size: 0.8rem;
           margin-right: 15px;
         }
-          .link {
-          margin-right: 15px;
-          }
-        a { color: #00f2fe; text-decoration: none; font-family: monospace; font-size: 1rem; }
+
+        a {
+          margin-right: 15px; 
+          color: #00f2fe; 
+          text-decoration: none; 
+          font-family: monospace; 
+          font-size: 1rem; 
+        }
         a:hover { text-decoration: underline; }
-        .desc { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
+        .desc { 
+          color: rgba(255,255,255,0.6); 
+          font-size: 0.9rem; 
+          margin-right: 15px;
+        }
       </style>
     </head>
     <body>
