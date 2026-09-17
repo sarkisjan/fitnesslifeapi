@@ -54,6 +54,9 @@ app.get("/", (req, res) => {
           font-size: 0.8rem;
           margin-right: 15px;
         }
+          .link {
+          margin-right: 15px;
+          }
         a { color: #00f2fe; text-decoration: none; font-family: monospace; font-size: 1rem; }
         a:hover { text-decoration: underline; }
         .desc { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
@@ -66,23 +69,23 @@ app.get("/", (req, res) => {
       <h2>Core Aggregation Endpoints</h2>
       <ul>
         <li>
-          <div><span class="method">GET</span><a href="/exercises" target="_blank">/exercises</a></div>
+          <div><span class="method">GET</span><a class="link" href="/exercises" target="_blank">/exercises</a></div>
           <span class="desc">Fetch All Exercises</span>
         </li>
         <li>
-          <div><span class="method">GET</span><a href="/exercises/bodyPartList" target="_blank">/exercises/bodyPartList</a></div>
+          <div><span class="method">GET</span><a class="link" href="/exercises/bodyPartList" target="_blank">/exercises/bodyPartList</a></div>
           <span class="desc">Unique Body Parts List</span>
         </li>
         <li>
-          <div><span class="method">GET</span><a href="/exercises/equipmentList" target="_blank">/exercises/equipmentList</a></div>
+          <div><span class="method">GET</span><a class="link" href="/exercises/equipmentList" target="_blank">/exercises/equipmentList</a></div>
           <span class="desc">Unique Equipment List</span>
         </li>
         <li>
-          <div><span class="method">GET</span><a href="/exercises/primaryMusclesList" target="_blank">/exercises/primaryMusclesList</a></div>
+          <div><span class="method">GET</span><a class="link" href="/exercises/primaryMusclesList" target="_blank">/exercises/primaryMusclesList</a></div>
           <span class="desc">Unique Primary Muscles List</span>
         </li>
         <li>
-          <div><span class="method">GET</span><a href="/exercises/amazonLinksList" target="_blank">/exercises/amazonLinksList</a></div>
+          <div><span class="method">GET</span><a class="link" href="/exercises/amazonLinksList" target="_blank">/exercises/amazonLinksList</a></div>
           <span class="desc">Affiliate E-Commerce Mapping</span>
         </li>
       </ul>
@@ -90,15 +93,15 @@ app.get("/", (req, res) => {
       <h2>Example Parameterized Lookup Filters</h2>
       <ul>
         <li>
-          <div><span class="method">GET</span><a href="/exercises/id/0001" target="_blank">/exercises/id/0001</a></div>
+          <div><span class="method">GET</span><a class="link" href="/exercises/id/0001" target="_blank">/exercises/id/0001</a></div>
           <span class="desc">Lookup by Target ID</span>
         </li>
         <li>
-          <div><span class="method">GET</span><a href="/exercises/name/press" target="_blank">/exercises/name/press</a></div>
+          <div><span class="method">GET</span><a class="link" href="/exercises/name/press" target="_blank">/exercises/name/press</a></div>
           <span class="desc">Full-Text Search by Name</span>
         </li>
         <li>
-          <div><span class="method">GET</span><a href="/exercises/primaryMuscles/biceps" target="_blank">/exercises/primaryMuscles/biceps</a></div>
+          <div><span class="method">GET</span><a class="link" href="/exercises/primaryMuscles/biceps" target="_blank">/exercises/primaryMuscles/biceps</a></div>
           <span class="desc">Filter by Primary Muscle</span>
         </li>
       </ul>
