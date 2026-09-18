@@ -2,9 +2,7 @@
 
 A scalable, production-grade RESTful API built with **Node.js** and **Express**, engineered to parse, filter, and serve structured datasets for over 1,200 fitness routines. The architecture utilizes modern ES6 syntax and is securely deployed in a live containerized environment on **Render**.
 
-🌐 **Live Deployment Root URL:** [https://onrender.com](https://onrender.com)
-
----
+🌐 **Live Deployment Root URL:** https://fitnesslifeapi.onrender.com/
 
 ## 🛠️ Architecture & Tech Stack
 
@@ -25,11 +23,10 @@ A scalable, production-grade RESTful API built with **Node.js** and **Express**,
 
 Verifies the running operational status of the hosted cloud server environment.
 
-- **URL:** `/`
+
 - **Method:** `GET`
-- **Success Response:** `200 OK`
-- **Payload Format:** Text string (`Hello from Homepage.`)
-- **Live Test:** `https://onrender.com/`
+
+- **Live Test:** `(https://fitnesslifeapi.onrender.com/)`
 
 ---
 
@@ -45,7 +42,7 @@ Extracts and streams down the entire collection mapping out every individual exe
 - **Method:** `GET`
 - **Success Response:** `200 OK`
 - **Returns:** `Array<Object>` (Complete Exercises JSON array)
-- **Live Link:** `https://onrender.com/exercises`
+- **Live Link:** `https://fitnesslifeapi.onrender.com/exercises`
 
 ### 3. Extract Unique Body Parts Collection
 
@@ -55,7 +52,7 @@ Scans records arrays dynamically and returns an optimized array containing only 
 - **Method:** `GET`
 - **Success Response:** `200 OK`
 - **Returns:** `Array<String>` (e.g., `["back", "cardio", "chest", "lower arms", "waist"]`)
-- **Live Link:** `https://onrender.com/exercises/bodyPartList`
+- **Live Link:** `https://fitnesslifeapi.onrender.com/exercises/bodyPartList`
 
 ### 4. Extract Unique Equipment Categories Collection
 
@@ -65,7 +62,7 @@ Compiles a unique array mapping every fitness gear item or equipment criteria va
 - **Method:** `GET`
 - **Success Response:** `200 OK`
 - **Returns:** `Array<String>` (e.g., `["barbell", "dumbbell", "body weight", "cable", "stability ball"]`)
-- **Live Link:** `https://onrender.com/exercises/equipmentList`
+- **Live Link:** `https://fitnesslifeapi.onrender.com/exercises/equipmentList`
 
 ### 5. Extract Unique Primary Muscles Target Tags
 
@@ -75,7 +72,7 @@ Aggregates and delivers a distinct unique collection array detailing all main ta
 - **Method:** `GET`
 - **Success Response:** `200 OK`
 - **Returns:** `Array<String>` (e.g., `["biceps", "delts", "pectorals", "lats", "quads"]`)
-- **Live Link:** `https://onrender.com/exercises/primaryMusclesList`
+- **Live Link:** `https://fitnesslifeapi.onrender.com/exercises/primaryMusclesList`
 
 ### 6. Fetch Equipment Affiliate E-Commerce Matrix
 
@@ -85,7 +82,7 @@ Filters database array loops dynamically, omits null entries, and forms a clean 
 - **Method:** `GET`
 - **Success Response:** `200 OK`
 - **Returns:** `Object` (e.g., `{ "dumbbell": "https://amazon.com...", "barbell": "https://amazon.com..." }`)
-- **Live Link:** `https://onrender.com/exercises/amazonLinksList`
+- **Live Link:** `https://fitnesslifeapi.onrender.com/exercises/amazonLinksList`
 
 ---
 
@@ -97,7 +94,7 @@ Filters database array loops dynamically, omits null entries, and forms a clean 
 - **Method:** `GET`
 - **Params:** `:id` (The exact unique string tracking string code assigned to the exercise asset)
 - **Returns:** `Array<Object>` (An array containing the target matched object)
-- **Example Link:** `https://onrender.com/exercises/id/0001`
+- **Example Link:** `https://fitnesslifeapi.onrender.com/exercises/id/0001`
 
 ### 8. Full-Text Query Lookup by Routine Name
 
@@ -105,7 +102,7 @@ Filters database array loops dynamically, omits null entries, and forms a clean 
 - **Method:** `GET`
 - **Params:** `:name` (Partial or full string matching dynamic exercise naming labels query bounds)
 - **Returns:** `Array<Object>` (Collection of all exercises bearing names that include the parameter string)
-- **Example Link:** `https://onrender.com/exercises/name/press`
+- **Example Link:** `https://fitnesslifeapi.onrender.com/exercises/name/press`
 
 ### 9. Query Filter by Primary Muscle System
 
@@ -113,7 +110,7 @@ Filters database array loops dynamically, omits null entries, and forms a clean 
 - **Method:** `GET`
 - **Params:** `:primaryMuscles` (Target primary muscle group lookup query string value)
 - **Returns:** `Array<Object>`
-- **Example Link:** `https://onrender.com/exercises/primaryMuscles/biceps`
+- **Example Link:** `https://fitnesslifeapi.onrender.com/exercises/primaryMuscles/biceps`
 
 ### 10. Query Filter by Equipment Requirement
 
@@ -121,7 +118,7 @@ Filters database array loops dynamically, omits null entries, and forms a clean 
 - **Method:** `GET`
 - **Params:** `:equipment` (Specific equipment name text keyword tracking filter argument)
 - **Returns:** `Array<Object>`
-- **Example Link:** `https://onrender.com/exercises/equipment/dumbbell`
+- **Example Link:** `https://fitnesslifeapi.onrender.com/exercises/equipment/dumbbell`
 
 ### 11. Query Filter by Target Body Part Division
 
@@ -129,4 +126,4 @@ Filters database array loops dynamically, omits null entries, and forms a clean 
 - **Method:** `GET`
 - **Params:** `:bodyPart` (Specific physiological body part context criteria target)
 - **Returns:** `Array<Object>`
-- **Example Link:** `https://onrender.com/exercises/bodyPart/chest`
+- **Example Link:** `https://fitnesslifeapi.onrender.com/exercises/bodyPart/chest`
